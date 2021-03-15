@@ -165,8 +165,7 @@ console.log(superSum(3))
 // решить все задачи по рекурсии которые даны в конце статьи https://learn.javascript.ru/recursion
 
 function fib(n: number): number {
-    if (n <= 1) return n;
-    return fib(n - 1) + fib(n + 2)
+    return n <= 1 ? n : fib(n - 1) + fib(n - 2)
 }
 
 alert(fib(3)); // 2
